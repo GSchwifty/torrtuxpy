@@ -1,4 +1,4 @@
 torrtuxpy
 =========
 
-Its a torrtux clone made in python
+Torrtux clone made in python
