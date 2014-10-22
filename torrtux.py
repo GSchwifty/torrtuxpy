@@ -29,7 +29,7 @@ trList.pop(0)
 tdList = [i.find_all('td') for i in trList]
 print(Fore.YELLOW + "Num|", Fore.GREEN + "SE|", Fore.RED + "LE|", Fore.RESET + "Genre|", Fore.BLUE + "Name|", Fore.GREEN + "Author" + Fore.RESET, sep="")
 for i in range(len(tdList)):
-    print(Fore.YELLOW + str(i), Fore.GREEN + torrSE(i), Fore.RED + torrLE(i), Fore.RESET + torrCategory(i), Fore.BLUE + torrTitle(i), Fore.GREEN + torrUploader(i), torrSize(i) + Fore.RESET)
+    print(Fore.YELLOW + str(i), Fore.GREEN + torrSE(i), Fore.RED + torrLE(i), Fore.RESET + torrCategory(i), Fore.BLUE + torrTitle(i) + Fore.RESET)
 #    print(Fore.YELLOW + str(i), Fore.GREEN + torrSE(i), Fore.RED + torrLE(i), Fore.RESET + torrCategory(i), Fore.BLUE + torrTitle(i), Fore.GREEN + torrUploader(i), torrSize(i) + Fore.RESET)
 print(Fore.YELLOW + "==>", Fore.BLUE + "Copy the magnet link?" + Fore.RESET)
 torrentSelected = input(Fore.YELLOW + "==> " + Fore.RESET)
