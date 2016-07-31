@@ -18,7 +18,7 @@ hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML,
 req = urllib.request.Request(page, headers=hdr)
 pageContent = urllib.request.urlopen(req)
 
-soup = BeautifulSoup(pageContent)
+soup = BeautifulSoup(pageContent, "lxml")
 
 def torrTitle(i): return(tdList[i][1].contents[1].text.strip())
 def torrMagnetLink(i): return(tdList[i][1].contents[3].get('href'))
